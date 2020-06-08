@@ -27,12 +27,12 @@ class Library:
         print("You have return the book. Thank You")
 
 class Customer:
-    def requestBook(self):
+    def requestedBook(self):
         print("Enter the bame of a book you would like to borrow: ")
         self.book = input()
         return self.book
 
-    def returnBook(self):
+    def returnedBook(self):
         print("enter the name of the book which you are returning ")
         self.book = input()
         return self.book
@@ -49,10 +49,10 @@ while True:
     if userChoice is 1:
         library.displayAvailableBooks()
     elif userChoice is 2:
-        requestedBook = customer.requestBook()
-        library.lendBook(requestedBook)
+        requestBook = customer.requestedBook()
+        library.lendBook(requestBook)
     elif userChoice is 3:
-        returnBook = customer.returnBook()
+        returnBook = customer.returnedBook()
         library.addBook(returnedBook)
     elif userChoice is 4:
         quit()
